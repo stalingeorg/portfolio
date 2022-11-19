@@ -2,9 +2,9 @@ import React from 'react';
 import IMG1 from '../../assets/pr1.jpg';
 import IMG2 from '../../assets/pr2.jpg';
 import IMG3 from '../../assets/pr3.jpg';
-import IMG4 from '../../assets/fake.png';
-import IMG5 from '../../assets/news.png';
-import IMG6 from '../../assets/math.png';
+import IMG4 from '../../assets/aptv.png';
+import IMG5 from '../../assets/family.webp';
+import IMG6 from '../../assets/copier.png';
 
 import './portfolio.css';
 
@@ -38,33 +38,33 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: 'Shelter',
-      img: IMG3,
+      title: 'Aptiv',
+      img: IMG4,
       description:
-        'Fully responsive interactive website built based on Figma design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/shelter/pages/main/index.html',
-      github: 'https://github.com/Meri-MG/shelter',
+        'Dashboard for company process : Machine process cycle,Employee Schedule',
+      technologies: 'HTML | CSS',
+      link: ' ',
+      github: ' ',
     },
     {
       id: 5,
-      title: 'World News',
+      title: 'Family App',
       img: IMG5,
       description:
-        'Fully responsive interactive website built based on Adobe XD design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/Unilab-world-news/',
-      github: 'https://github.com/Meri-MG/Unilab-world-news',
+        'Build a family app for a UAE based family',
+      technologies: 'HTML | CSS | Javascript',
+      link: '',
+      github: '',
     },
     {
       id: 6,
-      title: 'Math Resource',
+      title: 'Copier Printers',
       img: IMG6,
       description:
-        'Real-world group project which is still in progress and will provide educational platform for future young developers',
-      technologies: 'JavaScript | Scss | Python',
-      link: 'https://lukinoo.github.io/math-resource/',
-      github: 'https://github.com/lukinoo/math-resource',
+        'Canon dealer website with software',
+      technologies: 'JavaScript | HTML | CSS',
+      link: 'https://copiersprinters.in/',
+      github: '',
     },
   ];
 
