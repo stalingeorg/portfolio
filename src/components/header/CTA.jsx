@@ -10,6 +10,7 @@ const CTA = () => {
         Download CV
       </a>
     </div>
+ 
      <div className="cta">
       <a href={CV}   className="btn" target='_blank'>
 
@@ -21,3 +22,4 @@ const CTA = () => {
 };
 
 export default CTA;
+

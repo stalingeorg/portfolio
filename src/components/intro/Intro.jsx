@@ -10,7 +10,7 @@ const Intro = () => {
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="row">
-        <p>To be a part of team where i can use my skills and knowledge for the mutual benefits of team and learn in my career.</p>
+        <p>I'm a Frontend developer based in Kerala India that builds responsive websites and applications designs that solve your problems and meet your business requirements.</p>
         </div>
         <div className="about__content">
           <div className="about__cards">
