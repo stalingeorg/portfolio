@@ -20,14 +20,14 @@ const Header = () => {
   return (
     <header id="home" className='section_left'>
       <div className="container header__container">
-      <div className="row ">
-      <div className='' style={{width: "60%"}}> 
+      <div className="row row_column">
+      <div className='container_left'> 
        <h5 className='text_anim'>Hello I'm</h5>
         <h1>Stalin George   </h1>
         <h5 className="text-light">Frontend Developer <Emoji  symbol="👋" label="sheep" /></h5>
         <Cvpdf />
        </div>
-       <div style={{width: "35%"}} className='position-relative section_right'> 
+       <div className='position-relative container_right'> 
        {/* <div className="about__me">
           <div className="about__me-image">
              
@@ -68,9 +68,9 @@ const Header = () => {
         repeatDelay: 1
       }}
     /> 
-<div className="shape"></div>
+<div className="shape"><Socialconnet /></div>
 </div>
-        <Socialconnet />
+        
         
 
       </div>
