@@ -1,8 +1,8 @@
 import React from 'react';
-import CTA from './CTA';
-import HeaderSocials from './HeaderSocials';
+import Cvpdf from './Cvpdf';
+import Socialconnet from './Socialconnect';
 import './header.css';
-import ME from '../../assets/me.jpg';
+import ME from '../../assets/bg.png';
 import '../intro/intro.css';
 import { motion } from "framer-motion";
 
@@ -18,17 +18,17 @@ const Emoji = props => (
 )
 const Header = () => {
   return (
-    <header id="home">
+    <header id="home" className='section_left'>
       <div className="container header__container">
-      <div className="row">
-      <div style={{width: "60%"}}> 
+      <div className="row ">
+      <div className='' style={{width: "60%"}}> 
        <h5 className='text_anim'>Hello I'm</h5>
         <h1>Stalin George   </h1>
         <h5 className="text-light">Frontend Developer <Emoji  symbol="👋" label="sheep" /></h5>
-        <CTA />
+        <Cvpdf />
        </div>
-       <div style={{width: "35%"}}> 
-       <div className="about__me">
+       <div style={{width: "35%"}} className='position-relative section_right'> 
+       {/* <div className="about__me">
           <div className="about__me-image">
              
         
@@ -50,8 +50,27 @@ const Header = () => {
       }}
     /> 
      </div>
-    </div>
-        <HeaderSocials />
+    </div> */}
+ 
+    <div className="image"> 
+<motion.div
+          className="avatar" style={{backgroundImage: `url(${ME})`}}
+      animate={{
+        scale: [1, 1.2, 1, 1, 1],
+        rotate: [0, 40, 40, 0, 0],
+        borderRadius: ["50%", "50%", "50%", "50%", "50%"]
+      }}
+      transition={{
+        duration: 2,
+        ease: "easeInOut",
+        times: [0, 0.2, 0.5, 0.8, 1],
+        repeat: 0,
+        repeatDelay: 1
+      }}
+    /> 
+<div className="shape"></div>
+</div>
+        <Socialconnet />
         
 
       </div>

@@ -1,5 +1,5 @@
 header {
-  height: 70vh;
+  height: 80vh;
   padding-top: 7rem;
   overflow: hidden;
 }
@@ -23,14 +23,15 @@ header {
   gap: 0.8rem;
   position: absolute;
   right: 0rem;
-  bottom: 1rem;
+  bottom: 0rem;
+  z-index: 1;
 }
 
 .header__socials::after {
   content: '';
   width: 1px;
   height: 2rem;
-  background: #fff;
+  background: #343030;
 }
 
 .scroll__down {
@@ -47,7 +48,7 @@ header {
 }
 .a_social{
   font-size: 2rem;
-  color: #fff;
+  color: #343030;
 }
 @media screen and (max-width: 1024px){
   header {
@@ -117,4 +118,181 @@ header {
   display: inline-block;
 }
 @keyframes wave-animation{0%{-webkit-transform:rotate( 0.0deg);-ms-transform:rotate( 0.0deg);transform:rotate( 0.0deg);}10%{-webkit-transform:rotate(14.0deg);-ms-transform:rotate(14.0deg);transform:rotate(14.0deg);}20%{-webkit-transform:rotate(-8.0deg);-ms-transform:rotate(-8.0deg);transform:rotate(-8.0deg);}30%{-webkit-transform:rotate(14.0deg);-ms-transform:rotate(14.0deg);transform:rotate(14.0deg);}40%{-webkit-transform:rotate(-4.0deg);-ms-transform:rotate(-4.0deg);transform:rotate(-4.0deg);}50%{-webkit-transform:rotate(10.0deg);-ms-transform:rotate(10.0deg);transform:rotate(10.0deg);}60%{-webkit-transform:rotate( 0.0deg);-ms-transform:rotate( 0.0deg);transform:rotate( 0.0deg);}100%{-webkit-transform:rotate( 0.0deg);-ms-transform:rotate( 0.0deg);transform:rotate( 0.0deg);}}
+
+.image {
+  position: relative;
+  height: 398px;
+    width: 398px;
+}
+.image img {
+  min-width: 100%;
+  position: relative;
+  opacity: 0;
+}
+.image .main {
+  transform: rotate(7deg);
+}
+.image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: rotate(0deg);
+  z-index: 2;
+  border-radius: 50% !important;
+  transition: all .4s ease;
+  background-color: #e9e9fb;
+  filter: revert;
+}
+.image .shape {
+  background-color: #ffc04e;
+  transform: rotate(-6deg);
+}
+.image .shape {
+  position: absolute;
+  top: 23px;
+  bottom: -23px;
+  right: -95px;
+  width: 90%;
+  background-color: #ffc04e;
+  transform: rotate(0deg);
+  z-index: 1;
+  border-radius: 10px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.main:hover {
+  transform: rotate(10.0deg) !important;
+  cursor: pointer;
+}
+.position-relative{
+  position: relative;
+}
+.section_left {
+  --s: 25vmin;
+  --p: calc(var(--s) / 2);
+  --c1: #910000;
+  --c2: #000912;
+  --c3: #262424;
+  --bg: #0a0808;
+  --d: 10000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+  
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position: 
+    calc(var(--p) *  1) calc(var(--p) *  0), 
+    calc(var(--p) * -1) calc(var(--p) *  1), 
+    calc(var(--p) *  1) calc(var(--p) * -1), 
+    calc(var(--p) * -1) calc(var(--p) *  0);
+  animation: 
+    color var(--d) var(--e) infinite,
+    position var(--d) var(--e) infinite;
+    background-color: black;
+}
+
+@keyframes color {
+  0%, 25% {
+    --bg: var(--c3);
+  }
+  26%, 50% {
+    --bg: var(--c1);
+  }
+  51%, 75% {
+    --bg: var(--c3);
+  }
+  76%, 100% {
+    --bg: var(--c2);
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    animation: none;
+  }
+}
+.image{
+	min-width: 450px;
+	min-height: 450px;
+	position: relative;
+	border-radius: 100%;
+}
+.image .avatar {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	animation: morph 8s ease-in-out infinite 1s;
+	background-blend-mode: multiply;
+	-webkit-box-shadow: inset 0px 0px 0px 18px rgba(255,255,255,.3);
+    -moz-box-shadow: inset 0px 0px 0px 18px rgba(255,255,255,.3);
+    box-shadow: inset 0px 0px 0px 18px rgba(255,255,255,.3);
+    background-color: white;
+    z-index: 2;
+}
+@keyframes morph {
+	 0% {
+		 border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+	 50% {
+		 border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+	 100% {
+		 border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+}
 

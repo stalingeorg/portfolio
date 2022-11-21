@@ -1,18 +1,18 @@
 import React from 'react';
-import CV from '../../assets/resume.pdf';
+import Resume from '../../assets/resume.pdf';
 
-const CTA = () => {
+const CVPDF = () => {
   return (
     <div style={{'display':'flex'}}>
     <div className="cta">
-      <a href={CV} download className="btn">
+      <a href={Resume} download className="btn">
 
         Download CV
       </a>
     </div>
  
      <div className="cta">
-      <a href={CV}   className="btn" target='_blank'>
+      <a href={Resume}   className="btn" target='_blank' rel="noreferrer">
 
        View CV
      </a>
@@ -21,5 +21,5 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default CVPDF;
 
