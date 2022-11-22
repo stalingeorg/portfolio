@@ -16,31 +16,54 @@ const Experience = () => {
       {/* <h5>The Skills I Have</h5> */}
      
       <div className="container">
-      <h2 className='main_title'>SKILLS</h2>
+      {/* <h2 className='main_title'>SKILLS</h2> */}
+      <h3 class="main_sb"><span class="simple_title">TECHNOLOGIES</span><span class="bg_title">SKILLS</span></h3>
+      {/* <div class="animated-bar"></div> */}
         <div className='technologies'>
           <div className='technologies_item'>
-            <img src={IMG1} alt="" />
+            <div>
+            <img src={IMG1} alt=""/>
+            <p>HTML</p>
+            </div>
           </div>
           <div className='technologies_item'>
+          <div>
             <img src={IMG2} alt="" />
+            <p>CSS</p>
+            </div>
           </div>
           
           <div className='technologies_item'>
+          <div>
             <img src={IMG3} alt="" />
+            <p>React</p>
+            </div>
           </div>
           
           <div className='technologies_item'>
+          <div>
             <img src={IMG4} alt="" />
+            <p>Javascript</p>
+            </div>
           </div>
           
           <div className='technologies_item'>
+          <div>
             <img src={IMG5} alt="" />
+            <p>PHP</p>
+            </div>
           </div>
           <div className='technologies_item'>
+          <div>
             <img src={IMG6} alt="" />
+            <p>SQL</p>
+            </div>
           </div>
           <div className='technologies_item'>
+          <div>
             <img src={IMG7} alt="" />
+            <p>Github</p>
+            </div>
           </div>
         </div>
       </div>
