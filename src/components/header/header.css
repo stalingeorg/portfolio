@@ -31,7 +31,7 @@ header {
     flex-direction: column;
   }
   header{
-    height: 100vh;
+    height: 100%;
   }
 }
 .header__socials {
@@ -118,11 +118,11 @@ header {
 @-o-keyframes type {
     from { width: 0; }
 }
-.box {
+/* .box {
   width: 100%;
   height: 100%;
   background: #fff;
-}
+} */
 .emoji {
   -webkit-animation-name: wave-animation;
   animation-name: wave-animation;

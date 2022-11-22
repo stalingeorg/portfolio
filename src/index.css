@@ -67,7 +67,7 @@ h5 {
   font-size: 2.5rem;
 }
 section {
-  margin-top: 8rem;
+  padding: 8rem 0px;
 }
 
 section > h2,

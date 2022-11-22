@@ -3,7 +3,7 @@ import Cvpdf from './Cvpdf';
 import Socialconnet from './Socialconnect';
 import './header.css';
 import ME from '../../assets/bg.png';
-import '../intro/intro.css';
+import '../about/about.css';
 import { motion } from "framer-motion";
 
 const Emoji = props => (
