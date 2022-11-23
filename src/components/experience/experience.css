@@ -80,7 +80,7 @@
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     grid-row-gap:7.375rem;
-    margin: 124px 0px;
+    margin: 124px 0px 0px 0;
 }
 
 .technologies_item {
@@ -95,6 +95,35 @@
     height: auto;
     vertical-align: middle;
     width: 120px;
+}
+
+.technologies_item:nth-child(1):hover img {
+    filter: invert(41%) sepia(71%) saturate(3869%) hue-rotate(349deg) brightness(94%) contrast(90%);
+    cursor: pointer;
+}
+.technologies_item:nth-child(2):hover img {
+    filter: invert(24%) sepia(93%) saturate(5700%) hue-rotate(230deg) brightness(93%) contrast(85%);
+    cursor: pointer;
+}
+.technologies_item:nth-child(3):hover img {
+    filter: invert(76%) sepia(26%) saturate(2755%) hue-rotate(168deg) brightness(108%) contrast(91%);
+    cursor: pointer;
+}
+.technologies_item:nth-child(4):hover img {
+    filter:  invert(66%) sepia(18%) saturate(5460%) hue-rotate(352deg) brightness(102%) contrast(88%);
+    cursor: pointer;
+}
+.technologies_item:nth-child(5):hover img {
+    filter:  invert(48%) sepia(56%) saturate(292%) hue-rotate(198deg) brightness(89%) contrast(92%);
+    cursor: pointer;
+}
+.technologies_item:nth-child(6):hover img {
+    filter:  invert(58%) sepia(59%) saturate(6998%) hue-rotate(184deg) brightness(83%) contrast(104%);
+    cursor: pointer;
+}
+.technologies_item:nth-child(7):hover img {
+    filter:  invert(72%) sepia(74%) saturate(354%) hue-rotate(168deg) brightness(94%) contrast(110%);
+    cursor: pointer;
 }
 
 h2.main_title {
@@ -200,3 +229,4 @@ h2.main_title {
     bottom: -36px;
     z-index: 2;
 }
+ 

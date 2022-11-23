@@ -2,7 +2,7 @@ import React from 'react';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
 import './experience.css';
 import IMG1 from '../../assets/html.svg';
-import IMG2 from '../../assets/css.svg';
+import IMG2 from '../../assets/css3.svg';
 import IMG3 from '../../assets/react.svg';
 import IMG4 from '../../assets/js.svg';
 import IMG5 from '../../assets/php.svg';
