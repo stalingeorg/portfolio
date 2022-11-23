@@ -1,11 +1,15 @@
+#portfolio{
+    background: #000000;
+}
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    margin: 124px 0px 0px 0;
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
+    background: #030304;
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;

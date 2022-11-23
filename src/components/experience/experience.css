@@ -87,7 +87,10 @@
     display: flex;
     justify-content: center;
 }
-
+.technologies_item p{
+    font-weight: 900;
+    font-size: 19px;
+}
 .technologies img {
     max-width: 100%;
     transition: opacity .3s;
@@ -207,7 +210,7 @@ h2.main_title {
     font-weight: 900;
     font-size: 46px;
     position: absolute;
-    color: #fff;
+    color: #ffc04e;
     margin: 0;
     padding: 0;
     z-index: 3;

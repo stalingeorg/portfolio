@@ -70,10 +70,12 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      {/* <h5>My Recent Work</h5>
+      <h2>Portfolio</h2> */}
+<div className="container">
+<h3 class="main_sb"><span class="simple_title">PORTFOLIO</span><span class="bg_title">WORKS</span></h3>
 
-      <div className="container portfolio__container">
+      <div className="portfolio__container">
         {soloProjects.map((pro) => (
           <article className="portfolio__item" key={pro.id}>
             <div className="portfolio__item-image">
@@ -86,6 +88,7 @@ const Portfolio = () => {
             </div>
           </article>
         ))}
+      </div>
       </div>
     </section>
   );
