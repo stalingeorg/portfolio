@@ -8,7 +8,7 @@ import IMG4 from '../../assets/js.svg';
 import IMG5 from '../../assets/php.svg';
 import IMG6 from '../../assets/sql.svg';
 import IMG7 from '../../assets/github.svg';
-
+import { Player } from '@lottiefiles/react-lottie-player';
 
 const Experience = () => {
   return (
@@ -23,6 +23,7 @@ const Experience = () => {
           <div className='technologies_item'>
             <div>
             <img src={IMG1} alt=""/>
+            {/* <Player autoplay loop src="https://assets9.lottiefiles.com/private_files/lf30_wuuqhfmi.json" style={{ height: 'auto', width: '120px' }}></Player> */}
             <p>HTML</p>
             </div>
           </div>
@@ -35,7 +36,8 @@ const Experience = () => {
           
           <div className='technologies_item'>
           <div>
-            <img src={IMG3} alt="" />
+            <img src={IMG3} alt="" /> 
+            {/* <Player autoplay loop src="https://assets5.lottiefiles.com/datafiles/fab7172a9302d416bcdb8ac7e1c71123/data.json" style={{ height: 'auto', width: '120px' }}></Player> */}
             <p>React</p>
             </div>
           </div>
@@ -43,6 +45,7 @@ const Experience = () => {
           <div className='technologies_item'>
           <div>
             <img src={IMG4} alt="" />
+            {/* <Player autoplay loop src="https://assets5.lottiefiles.com/packages/lf20_fy4bunta.json" style={{ height: 'auto', width: '120px' }}></Player> */}
             <p>Javascript</p>
             </div>
           </div>
@@ -50,6 +53,7 @@ const Experience = () => {
           <div className='technologies_item'>
           <div>
             <img src={IMG5} alt="" />
+            {/* <Player autoplay loop src="https://assets4.lottiefiles.com/packages/lf20_7aq7s6rs.json" style={{ height: 'auto', width: '120px' }}></Player> */}
             <p>PHP</p>
             </div>
           </div>
@@ -62,6 +66,7 @@ const Experience = () => {
           <div className='technologies_item'>
           <div>
             <img src={IMG7} alt="" />
+            {/* <Player autoplay loop src="https://assets9.lottiefiles.com/packages/lf20_cwqf5i6h.json" style={{ height: 'auto', width: '120px' }}></Player> */}
             <p>Github</p>
             </div>
           </div>
