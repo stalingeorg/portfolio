@@ -9,7 +9,6 @@ const About = () => {
           <div>
           
             <div className="intro_exp_block_main_left border_anim" style={{padding: "4.375rem 0.125rem 3.125rem 4.6875rem", borderRight: "none !important"}}><span className="intro_exp_block_num">4+</span>
-            {/* <span className="intro_exp_block_color">.</span> */}
               <h5 className="intro_exp_block_title_left">Years<br></br>Experience<br></br>Working</h5>
             </div>
             </div>
@@ -21,7 +20,6 @@ const About = () => {
               borderLeft: "none !important", borderRight: "1px solid rgba(255,255,255,.4)",
               padding: "4.375rem 4.6875rem 3.125rem 0.125rem"
             }}>
-            {/* <span className="intro_exp_block_color">.</span> */}
               <span className="intro_exp_block_num">20</span>
               <h5 className="intro_exp_block_title_right">International<br></br>Companies<br></br>Projects</h5>
             </div>

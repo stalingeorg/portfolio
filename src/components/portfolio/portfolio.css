@@ -11,7 +11,6 @@
 .portfolio__item {
     background: #030304;
     padding: 1.3rem;
-    border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
@@ -24,7 +23,6 @@
 }
 
 .portfolio__item-image {
-    border-radius: 1.5rem;
     overflow: hidden;
     height: 50%;
 }

@@ -1,3 +1,13 @@
+// export const soloProjects = [
+//   {
+//     title: ['Garage Studio','Chinmaya College'],
+//     img: [require('../../assets/pr1.jpg'),require('../../assets/pr2.jpg')],
+//     description:
+//       ['Studio bookings, events registration, Models & Photographer list','College website for info and admission'],
+//     technologies: ['PHP | HTML | CSS','PHP | HTML | CSS'],
+//     link: ['https://garagestudio.ae/','https://chinmayacollege.ac.in/'],
+//   }
+// ]; 
 export const soloProjects = [
     {
       id: 1,

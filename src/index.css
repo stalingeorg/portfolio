@@ -13,10 +13,8 @@
 :root {
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-primary: #000;
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
 
   --transition: all 400ms ease;
 
@@ -29,20 +27,15 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   font-family: 'Space Grotesk', sans-serif; 
   color: var(--color-white);
   line-height: 1.7;
- 
   background-color: #e5e5f7;
-opacity: 0.8;
-background-image: radial-gradient(#0f1028 0.5px, #000000ab 0.5px), radial-gradient(#353537 0.5px, #070740 0.5px);
-background-size: 20px 20px;
-background-position: 0 0,10px 10px;
+  opacity: 0.8;
+  background-image: radial-gradient(#0f1028 0.5px, #000000ab 0.5px), radial-gradient(#353537 0.5px, #070740 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
 }
 
 .container {
