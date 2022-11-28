@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header id="home" className='section_left'>
       <div className="container header__container">
-      <div className="row row_column">
+      <div className="row row_column h_100">
       <div className='container_left'> 
        <h5 className='text_anim'>Hello I'm</h5>
         <h1>Stalin George   </h1>

@@ -59,9 +59,9 @@ h1 {
 h5 {
   font-size: 2.5rem;
 }
-section {
+/* section {
   padding: 8rem 0px;
-}
+} */
 
 section > h2,
 section > h5 {
@@ -115,13 +115,10 @@ img {
   object-fit: cover;
 }
 
-@media screen and (max-width: 1024px){
-  .container {
-    width: var(--container-width-md);
-  }
-
+@media screen and (max-width: 1399px){
   section {
-    margin-top: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -132,5 +129,32 @@ img {
 
   section > h2 {
     margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1400px){
+  .container  {
+      max-width: 1320px;
+      padding: 120px 0px;
+  }
+}
+
+@media (max-width: 1399px){
+  .container {
+      max-width: 1140px;
+  }
+}
+@media (max-width: 992px){
+  .container {
+      max-width: 960px;
+  }
+}
+@media (max-width: 768px){
+  .container {
+      max-width: 720px;
+  }
+}
+@media (max-width: 576px){
+  .container {
+      max-width: 540px;
   }
 }

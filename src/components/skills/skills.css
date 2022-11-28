@@ -228,8 +228,12 @@ h2.main_title {
     max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
-    -webkit-user-select: none;
+    user-select: none;
     bottom: -36px;
     z-index: 2;
 }
- 
+@media(max-width:768px){
+    .technologies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
