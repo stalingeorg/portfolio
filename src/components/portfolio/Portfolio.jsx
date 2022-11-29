@@ -6,24 +6,24 @@ import { soloProjects } from './Projects';
 const Portfolio = () => {
 
   return (
-    <section id="portfolio">
+    <section className='portfolio'>
 
       <div className="container">
         <h3 className="main_sb"><span className="simple_title">PORTFOLIO</span><span className="bg_title">WORKS</span></h3>
 
-        <div className="portfolio__container">
+        <div className="p_container">
           {soloProjects.map((pro) => (
-          <article className="portfolio__item" key={pro.id}>
-            <div className="portfolio__item-image">
-              <img src={pro.img} alt={pro.title} />
-            </div>
-            <div className="portfolio__item-content">
-              <h3>{pro.title}</h3>
-              <p>{pro.description}</p>
-              <p>{pro.technologies}</p>
-            </div>
-          </article>
-        ))}
+            <article className="p_works" key={pro.id}>
+              <div className="p_works_img">
+                <img src={pro.img} alt={pro.title} />
+              </div>
+              <div className="p_works_content">
+                <h3>{pro.title}</h3>
+                <p>{pro.description}</p>
+                <p>{pro.technologies}</p>
+              </div>
+            </article>
+          ))}
 
           {/* {soloProjects.map((pro) => {
             return (
@@ -33,11 +33,11 @@ const Portfolio = () => {
                   return (
 
 
-                    <article className="portfolio__item" key={pro.id}>
-                      <div className="portfolio__item-image">
+                    <article className="p_works" key={pro.id}>
+                      <div className="p_works_img">
                         <img src={pic} alt={pro.title} />
                       </div>
-                      <div className="portfolio__item-content">
+                      <div className="p_works_content">
                         <h3>{pro.title}</h3>
                         <p>{pro.description}</p>
                         <p>{pro.technologies}</p>

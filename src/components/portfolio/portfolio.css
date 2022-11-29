@@ -1,59 +1,62 @@
-#portfolio{
+.portfolio {
     background: #000000;
 }
-.portfolio__container {
+
+.p_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     margin: 124px 0px 0px 0;
 }
 
-.portfolio__item {
+.p_works {
     background: #030304;
     padding: 1.3rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
 
-.portfolio__item:hover {
+.p_works:hover {
     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
     animation: borderRotate var(--d) linear infinite forwards;
     background: transparent;
     border-radius: 2rem;
 }
 
-.portfolio__item-image {
+.p_works_img {
     overflow: hidden;
     height: 50%;
 }
-.portfolio__item-image img{
+
+.p_works_img img {
     height: 100%;
 }
-.portfolio__item h3 {
+
+.p_works h3 {
     margin: 2rem 0 8px 0;
     font-size: 28px;
 }
 
-.portfolio__item p {
+.p_works p {
     margin: 0 0 1.2rem 0;
     font-size: 0.9rem;
 }
 
- 
 
-.portfolio__item-content {
+
+.p_works_content {
     height: 50%;
 }
 
-@media screen and (max-width: 1024px){
-    .portfolio__container {
+@media screen and (max-width: 1024px) {
+    .p_container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
     }
 }
-  
-@media screen and (max-width: 600px){
-    .portfolio__container {
+
+@media screen and (max-width: 600px) {
+    .p_container {
         grid-template-columns: 1fr;
         gap: 1rem;
     }

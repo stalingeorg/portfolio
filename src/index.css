@@ -12,10 +12,8 @@
 
 :root {
   --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
   --color-primary: #000;
   --color-white: #fff;
-
   --transition: all 400ms ease;
 
   --container-width-lg: 75%;
@@ -28,14 +26,14 @@ html {
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif; 
+  font-family: 'Space Grotesk', sans-serif;
   color: var(--color-white);
   line-height: 1.7;
   background-color: #e5e5f7;
   opacity: 0.8;
   background-image: radial-gradient(#0f1028 0.5px, #000000ab 0.5px), radial-gradient(#353537 0.5px, #070740 0.5px);
   background-size: 20px 20px;
-  background-position: 0 0,10px 10px;
+  background-position: 0 0, 10px 10px;
 }
 
 .container {
@@ -56,20 +54,18 @@ h1 {
   font-size: 4.5rem;
   line-height: 71px;
 }
+
 h5 {
   font-size: 2.5rem;
 }
-/* section {
-  padding: 8rem 0px;
-} */
 
-section > h2,
-section > h5 {
+section>h2,
+section>h5 {
   color: #e5e5e5;
   text-align: center;
 }
 
-section > h2 {
+section>h2 {
   color: #ffc04e;
   margin-bottom: 3rem;
 }
@@ -115,46 +111,50 @@ img {
   object-fit: cover;
 }
 
-@media screen and (max-width: 1399px){
+@media screen and (max-width: 1399px) {
   section {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
   }
 
-  section > h2 {
+  section>h2 {
     margin-bottom: 2rem;
   }
 }
-@media (min-width: 1400px){
-  .container  {
-      max-width: 1320px;
-      padding: 120px 0px;
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    padding: 120px 0px;
   }
 }
 
-@media (max-width: 1399px){
+@media (max-width: 1399px) {
   .container {
-      max-width: 1140px;
+    max-width: 1140px;
   }
 }
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
   .container {
-      max-width: 960px;
+    max-width: 960px;
   }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
   .container {
-      max-width: 720px;
+    max-width: 720px;
   }
 }
-@media (max-width: 576px){
+
+@media (max-width: 576px) {
   .container {
-      max-width: 540px;
+    max-width: 540px;
   }
 }

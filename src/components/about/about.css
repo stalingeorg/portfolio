@@ -1,20 +1,23 @@
-.about{
+.about {
     background-color: #000813;
 }
+
 .intro_exp_block_main_left {
     max-width: 21.25rem;
     padding: 4.375rem 4.6875rem 3.125rem 3.125rem;
     text-align: right;
-    border: 1px solid rgba(255,255,255,.4);
+    border: 1px solid rgba(255, 255, 255, .4);
     border-right: none !important;
 }
+
 .intro_exp_block_main_right {
     max-width: 21.25rem;
     padding: 4.375rem 4.6875rem 3.125rem 3.125rem;
     text-align: right;
-    border: 1px solid rgba(255,255,255,.4);
+    border: 1px solid rgba(255, 255, 255, .4);
     border-left: none !important;
 }
+
 .intro_exp_block_num {
     font-size: 12.5rem;
     font-weight: 500;
@@ -23,12 +26,13 @@
     margin-bottom: 3.125rem;
     color: #ffc04e;
 }
- 
+
 span.intro_exp_block_color {
     color: #cf000f;
     font-size: 12.5rem;
     font-weight: 500;
 }
+
 .intro_exp_block_title_left {
     font-size: 1.375rem;
     font-weight: 400;
@@ -37,6 +41,7 @@ span.intro_exp_block_color {
     margin-top: 2.1875rem;
     text-align: right;
 }
+
 .intro_exp_block_title_right {
     font-size: 1.375rem;
     font-weight: 400;
@@ -45,6 +50,7 @@ span.intro_exp_block_color {
     margin-top: 2.1875rem;
     text-align: left;
 }
+
 .intro_exp_block_title_left::before {
     position: absolute;
     bottom: 0.625rem;
@@ -54,13 +60,16 @@ span.intro_exp_block_color {
     content: '';
     background-color: #e11111;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
-p.inner_text{
+
+p.inner_text {
     padding: 1px 120px;
     font-size: 21px;
 }
+
 .intro_exp_block_title_right::after {
     position: absolute;
     bottom: 0.625rem;
@@ -70,99 +79,111 @@ p.inner_text{
     content: '';
     background-color: #e11111;
 }
+
 @property --angle {
     syntax: '<angle>';
     initial-value: 90deg;
     inherits: true;
-  }
-  
-  @property --gradX {
+}
+
+@property --gradX {
     syntax: '<percentage>';
     initial-value: 50%;
     inherits: true;
-  }
-  
-  @property --gradY {
+}
+
+@property --gradY {
     syntax: '<percentage>';
     initial-value: 0%;
     inherits: true;
-  }
-  
- 
-  
-  :root {
-      --d: 2500ms;
-      --angle: 90deg;
-      --gradX: 100%;
-      --gradY: 50%;
-      --c1: rgb(240, 10, 10);
-      --c2: rgba(255,255,255,.4);
-  }
- 
-  
-  .border_anim { 
+}
+
+
+
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgb(240, 10, 10);
+    --c2: rgba(255, 255, 255, .4);
+}
+
+
+.border_anim {
     border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
     animation: borderRotate var(--d) linear infinite forwards;
-  }
-  
- 
-  
-  @keyframes borderRotate {
-      100% {
-          --angle: 420deg;
-      }
-  }
-  
-  @keyframes borderRadial {
-      20% {
-          --gradX: 100%;
-          --gradY: 50%;
-      }
-      40% {
-          --gradX: 100%;
-          --gradY: 100%;
-      }
-      60% {
-          --gradX: 50%;
-          --gradY: 100%;
-      }
-      80% {
-          --gradX: 0%;
-          --gradY: 50%;
-      }
-      100% {
-          --gradX: 50%;
-          --gradY: 0%;
-      }
-  }
-  @media (max-width:768px){
-    .exp_mob_section{
+}
+
+
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+@keyframes borderRadial {
+    20% {
+        --gradX: 100%;
+        --gradY: 50%;
+    }
+
+    40% {
+        --gradX: 100%;
+        --gradY: 100%;
+    }
+
+    60% {
+        --gradX: 50%;
+        --gradY: 100%;
+    }
+
+    80% {
+        --gradX: 0%;
+        --gradY: 50%;
+    }
+
+    100% {
+        --gradX: 50%;
+        --gradY: 0%;
+    }
+}
+
+@media (max-width:768px) {
+    .exp_mob_section {
         padding: 4.375rem 4.6875rem 4.125rem 4.6875rem !important;
         border: none !important;
         max-width: 100% !important;
         text-align: center !important;
     }
-    .row_col{
+
+    .row_col {
         flex-direction: column;
     }
+
     p.inner_text {
         padding: 12px;
     }
-    .row_col>div{
+
+    .row_col>div {
         width: 100%;
     }
-  }
-  p.inner_text_2 {
+}
+
+p.inner_text_2 {
     display: none;
-    }
-  @media(max-width:1399px) and (min-width:769px){
+}
+
+@media(max-width:1399px) and (min-width:769px) {
     p.inner_text_2 {
         display: block;
         padding: 1px 120px;
         font-size: 21px;
         padding-top: 85px;
     }
+
     p.inner_text {
         display: none;
-        }
-  }
+    }
+}
