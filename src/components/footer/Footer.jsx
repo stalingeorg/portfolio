@@ -11,7 +11,7 @@ const Footer = () => {
         <a href="https://github.com/stalingeorg" target="_blank" rel="noreferrer" ><FaGithub /></a>
       </div>
       <div className="copyright_text">
-        <small>&copy; 2022. All rights reserved.</small>
+        <small>Made with Reactjs ❤️ &copy; 2022. All rights reserved.</small>
       </div>
     </footer>
   )
