@@ -184,6 +184,9 @@ p.inner_text_2 {
     }
 
     p.inner_text {
-        display: none;
+        visibility: hidden;
+    }
+    p.inner_text {
+        padding: 1px 34px;
     }
 }
